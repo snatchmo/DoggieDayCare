@@ -11,21 +11,21 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, class: "form-control", placeholder: "Dog's Name" %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :breed %><br>
-    <%= f.text_field :breed %>
+    <%= f.text_field :breed, class: "form-control", placeholder: "Dog's breed" %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :age %><br>
-    <%= f.number_field :age %>
+    <%= f.number_field :age, class: "form-control", placeholder: "approximate age in years" %>
   </div>
-  <div class="field">
+  <div class="field form-group">
     <%= f.label :owner_id %><br>
-    <%= f.collection_select :owner_id, Owner.all, :id, :name %>
+    <%= f.collection_select :owner_id, Owner.all, :id, :name  %>
   </div>
   <div class="actions">
     <%= f.submit %>

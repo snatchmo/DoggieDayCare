@@ -32,6 +32,20 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Better server than WEBrick
+gem 'thin'
+
+#Easily add Bootstrap themes and elements
+gem 'starter_generators'
+
+gem 'awesome_print'
+
+gem 'annotate'
+
+gem 'faker'
+
+gem 'populator'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
